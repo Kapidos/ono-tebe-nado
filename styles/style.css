@@ -30,7 +30,7 @@
 
 .address {
   color: #000000;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -40,16 +40,20 @@
   justify-self: end;
 }
 
-.overlay {
+.cover {
+  position: relative;
   background-image: url("/images/cover.jpg");
   height: 757px;
   background-position: center center;
   background-size: 100% auto;
 }
 
-.fog {
-  background-color: rgb(0 0 0 / 0.6);
+.overlay {
   height: inherit;
+  position: absolute;
+  background-color: rgb(0 0 0 / 0.6);
+  z-index: 100;
+  inset: 0;
 }
 
 .cover_title {
@@ -57,8 +61,8 @@
 }
 
 .aligned-text {
-  color: #FFF;
-  font-family: Raleway;
+  color: #fff;
+  font-family: Raleway, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
@@ -69,12 +73,39 @@
 }
 
 .letter-spacing-extended {
-  color: #FFF;
-  font-family: Raleway;
+  color: #fff;
+  font-family: Raleway, sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
   line-height: 115%;
   letter-spacing: 60px;
+  text-transform: uppercase;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.cover__description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.cover__description-text {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  /* 127.273% */
   text-transform: uppercase;
 }
