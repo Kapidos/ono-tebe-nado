@@ -1,6 +1,4 @@
-.header {
-  margin: auto;
-  width: 1440px;
+.header{
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
