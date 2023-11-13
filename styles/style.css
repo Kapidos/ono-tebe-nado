@@ -115,7 +115,6 @@
   font-style: normal;
   line-height: 100%;
   text-align: right;
-  text-align: right;
   text-transform: uppercase;
 }
 
@@ -136,11 +135,11 @@
 
 .cover__description {
   position: absolute;
+  display: flex;
   bottom: 63px;
   left: 422px;
   z-index: 0;
   z-index: 100;
-  display: flex;
   justify-content: center;
   align-items: flex-end;
   align-content: center;
@@ -270,7 +269,7 @@ article {
 .lots__look-more-link {
   padding-left: 90px;
   color: #000;
-  font-family: Raleway;
+  font-family: Raleway,sans-serif;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
